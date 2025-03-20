@@ -1,11 +1,15 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #CDEAC0;
+    color: #333;
+    text-align: center;
 }
 
 header {
-    text-align: center;
-    padding: 10px;
-    background-color: #f4f4f4;
+    background: #A7C7E7;
+    padding: 20px;
 }
 
 header img {
@@ -15,36 +19,58 @@ header img {
     margin-bottom: 10px;
 }
 
+header h1 {
+    color: #333;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
 section {
-    margin: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background: #EED3D9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.05);
+    background: #A8D5BA;
+}
+
+h2 {
+    color: #5D576B;
 }
 
 .project {
-    width: 400px; /* Square dimensions */
-    height: 200px;
-    border: 1px solid #cccccc;
-    margin: 10px;
-    text-align: center;
-    line-height: 200px; /* Vertically centers the text */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-.project:hover {
-            transform: scale(1.05);
-        }
-
-h1, h2 {
-    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid #5D576B;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
-#bio, #work {
-    background-color: #e9e9e9;
-    padding: 15px;
+.project a {
+    margin-top: 10px;
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 footer {
-    background-color: #f4f4f4;
-    text-align: center;
+    margin-top: 20px;
     padding: 10px;
+    background: #A7C7E7;
 }

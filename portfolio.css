@@ -20,12 +20,10 @@ section {
 }
 
 .project {
-    width: 200px; /* Square dimensions */
+    width: 400px; /* Square dimensions */
     height: 200px;
     border: 1px solid #cccccc;
     margin: 10px;
-    display: flex ; /* Aligns the containers side by side */
-    flex-direction: column;
     text-align: center;
     line-height: 200px; /* Vertically centers the text */
 }

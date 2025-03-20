@@ -7,9 +7,17 @@ body {
             text-align: center;
         }
         header {
-            background: #A7C7E7;
-            padding: 20px;
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
         }
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
         header h1 {
             color: #333;
             font-size: 2.5em;

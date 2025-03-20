@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teju P - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function navigateToPage() {
+            var selectedPage = document.getElementById("projectDropdown").value;
+            if (selectedPage) {
+                window.location.href = selectedPage;
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -25,6 +33,21 @@
             <li><strong>LANCrypt - Secured File Transfers</strong></li>
         </ul>
     </section>
+    
+    <section id="project-web">
+        <h2>Project Web</h2>
+        <label for="projectDropdown">Select a Web Page:</label>
+        <select id="projectDropdown" onchange="navigateToPage()">
+            <option value="">-- Select --</option>
+            <option value="blog.html">Blog Page</option>
+            <option value="parallax.html">Parallax Page</option>
+            <option value="portfolio.html">Portfolio Page</option>
+            <option value="about.html">About Page</option>
+            <option value="contact.html">Contact Page</option>
+            <option value="services.html">Services Page</option>
+            <option value="projects.html">Projects Page</option>
+        </select>
+    </section>
 
     <section id="contact">
         <h2>Contact</h2>
@@ -35,7 +58,5 @@
     <footer>
         <p>&copy; 2024 Teju P. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

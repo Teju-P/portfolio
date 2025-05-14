@@ -1,4 +1,4 @@
-/* Reset some basics */
+/* Reset basics */
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +7,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #f6f8f9;
+  background-color: white;
   color: #2c3e50;
 }
 
@@ -25,9 +24,9 @@ a {
 
 /* Navigation Bar */
 header {
-  background-color: #e0f0f5;
+  background-color: white;
   padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -42,7 +41,7 @@ header {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #2a6f74;
+  color: rgb(112, 56, 169);
 }
 
 .nav-links {
@@ -52,13 +51,13 @@ header {
 }
 
 .nav-links a {
-  color: #2c3e50;
+  color: #333;
   font-weight: 500;
 }
 
 /* Hero Section */
 .hero {
-  background-color: #d0e9e5;
+  background-color: #f4f7fb;
   padding: 3rem 0;
 }
 
@@ -72,13 +71,13 @@ header {
 
 .hero-text h1 {
   font-size: 2.5rem;
-  color: #1b4b4e;
+  color: #333;
 }
 
 .subheading {
   font-size: 1.2rem;
   margin-top: 0.5rem;
-  color: #406d6f;
+  color: #555;
 }
 
 .hero-image img {
@@ -90,7 +89,7 @@ header {
 /* Products Section */
 .products {
   padding: 3rem 0;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .products h2 {
@@ -107,7 +106,7 @@ header {
 }
 
 .product {
-  background: #f0f4f7;
+  background: #f9f9f9;
   padding: 1rem;
   border-radius: 6px;
   text-align: center;
@@ -122,8 +121,8 @@ header {
 
 /* Footer */
 footer {
-  background-color: #e0f0f5;
-  color: #2c3e50;
+  background-color: var(--ast-global-color-8);
+  color: white;
   padding-top: 2rem;
 }
 
@@ -137,7 +136,6 @@ footer {
 
 .footer-col h4 {
   margin-bottom: 1rem;
-  color: #1b4b4e;
 }
 
 .footer-col ul {
@@ -149,17 +147,18 @@ footer {
 }
 
 .footer-col a {
-  color: #2c3e50;
+  color: white;
 }
 
 .footer-col img {
   width: 24px;
   margin-right: 0.5rem;
+  filter: brightness(0) invert(1);
 }
 
 .footer-bottom {
   text-align: center;
   padding: 1rem 0;
   font-size: 0.9rem;
-  border-top: 1px solid #ccdcdc;
+  border-top: 1px solid rgba(255,255,255,0.2);
 }

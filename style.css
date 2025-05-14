@@ -1,45 +1,165 @@
+/* Reset some basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f6f8f9;
+  color: #2c3e50;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Navigation Bar */
 header {
-    text-align: center;
-    padding: 10px;
-    background-color: #f4f4f4;
+  background-color: #e0f0f5;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-section {
-    margin: 20px;
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2a6f74;
 }
 
-.project {
-    width: 200px; /* Square dimensions */
-    height: 200px;
-    border: 1px solid #cccccc;
-    margin: 10px;
-    display: inline-block ; /* Aligns the containers side by side */
-    text-align: center;
-    line-height: 200px; /* Vertically centers the text */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
-h1, h2 {
-    color: #333;
+.nav-links a {
+  color: #2c3e50;
+  font-weight: 500;
 }
 
-#bio, #work {
-    background-color: #e9e9e9;
-    padding: 15px;
+/* Hero Section */
+.hero {
+  background-color: #d0e9e5;
+  padding: 3rem 0;
 }
 
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #1b4b4e;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #406d6f;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Products Section */
+.products {
+  padding: 3rem 0;
+  background-color: #ffffff;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.product {
+  background: #f0f4f7;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  width: 250px;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.75rem;
+}
+
+/* Footer */
 footer {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 10px;
+  background-color: #e0f0f5;
+  color: #2c3e50;
+  padding-top: 2rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer-col h4 {
+  margin-bottom: 1rem;
+  color: #1b4b4e;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col a {
+  color: #2c3e50;
+}
+
+.footer-col img {
+  width: 24px;
+  margin-right: 0.5rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  border-top: 1px solid #ccdcdc;
 }

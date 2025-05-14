@@ -1,115 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teju P - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #CDEAC0;
-            color: #333;
-            text-align: center;
-        }
-        header {
-            background: #A7C7E7;
-            padding: 20px;
-        }
-        header h1 {
-            color: #333;
-            font-size: 2.5em;
-        }
-        header p {
-            font-size: 1.2em;
-        }
-        section {
-            margin: 20px auto;
-            padding: 20px;
-            width: 80%;
-            background: #EED3D9;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-        section:hover {
-            transform: scale(1.05);
-        }
-        h2 {
-            color: #5D576B;
-        }
-        select {
-            padding: 10px;
-            border-radius: 5px;
-            background: #A7C7E7;
-            color: #333;
-            font-weight: bold;
-        }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background: #A7C7E7;
-        }
-    </style>
-    <script>
-        function navigateToPage() {
-            var selectedPage = document.getElementById("projectDropdown").value;
-            if (selectedPage) {
-                window.location.href = selectedPage;
-            }
-        }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elegant Quest - Premium Corporate Gifts</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Teju P</h1>
-        <p>Computer Science Engineer | Web Developer</p>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a recent engineering graduate from MCE, holding a Bachelor's degree in Computer Science and Engineering.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Hostel Management System</strong></li>
-            <li><strong>Placement Management System</strong></li>
-            <li><strong>LANCrypt - Secured File Transfers</strong></li>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">Elegant Quest</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#products">All Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
-    
-    <section id="project-web">
-        <h2>Project Web</h2>
-        <label for="projectDropdown">Select a Web Page:</label>
-        <select id="projectDropdown" onchange="navigateToPage()">
-            <option value="">-- Select --</option>
-            <option value="landing.html">Landing Page</option>
-            <option value="blog.html">Blog Page</option>
-            <option value="parallax.html">Parallax Page</option>
-            <option value="recipe.html">Recepie Page</option>
-            <option value="portfolio.html">Portfolio Page</option>
-            <option value="invitation.html">Invitation Page</option>
-            <option value="techdoc.html">Technical Document Page</option>
-            <option value="ecommerce.html">E-commerce</option>
-            <option value="feedback.html">Feedback Form</option>
-            <option value="forms.html">Forms Page</option>
-            <option value="login.html">Login Page</option>
-            <option value="signup.html">Sign-Up Page</option>
-        </select>
-    </section>
+      </nav>
+    </div>
+  </header>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:tejup07.hsn@gmail.com">tejup07.hsn@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/Teju-P" target="_blank">github.com/Teju-P</a></p>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Gift Better. Grow Stronger.</h1>
+        <p class="subheading">Premium Corporate Gifts to Strengthen Every Business Relationship</p>
+      </div>
+      <div class="hero-image">
+        <img src="happy-customer.jpg" alt="Happy customer" />
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 Teju P. All rights reserved.</p>
-    </footer>
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="container">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="steel-bottle.jpg" alt="Steel Water Bottle" />
+          <h3>Steel Water Bottle</h3>
+        </div>
+        <div class="product">
+          <img src="corporate-bag.jpg" alt="Corporate Bag" />
+          <h3>Corporate Bag</h3>
+        </div>
+        <div class="product">
+          <img src="coffee-mug.jpg" alt="Coffee Mug" />
+          <h3>Coffee Mug</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col address">
+        <h4>Registered Office</h4>
+        <p>123 Corporate Lane, Business City, IN 560001</p>
+      </div>
+      <div class="footer-col links">
+        <h4>Get to know us</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#">Cities</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col social">
+        <h4>Follow Us</h4>
+        <a href="#"><img src="linkedin-icon.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+        <a href="#"><img src="youtube-icon.png" alt="YouTube" /></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 | All rights reserved</p>
+    </div>
+  </footer>
 </body>
 </html>
